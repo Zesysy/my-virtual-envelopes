@@ -9,6 +9,10 @@
   padding: 0px 0px !important;
 }
 
+.ant-layout-footer {
+  text-align: end;
+}
+
 [data-theme="dark"] .ant-layout-header {
   background: #6aa0c7;
 }
