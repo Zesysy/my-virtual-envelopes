@@ -3,11 +3,14 @@ import React from "react";
 import { Layout } from "./components/containers";
 
 import "./App.css";
+import Router from "./Router";
 
-const App: React.FC = () => (
-  <>
-    <Layout />
-  </>
+export interface IAppProps {}
+
+const App = () => (
+  <Layout>
+    <Router />
+  </Layout>
 );
 
 export default App;

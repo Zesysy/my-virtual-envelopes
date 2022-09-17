@@ -2,16 +2,21 @@ import React from "react";
 import { Layout } from "antd";
 
 import "./layout.css";
+import { Header, Footer } from "./sub";
 
-const { Header, Footer, Content } = Layout;
+const { Content } = Layout;
 
-const LayoutContainer = () => {
+const Loading = () => <p>Chargement ...</p>;
+
+const LayoutContainer = ({ children }: { children: any }) => {
   return (
-    <Layout>
-      <Header>Header</Header>
-      <Content>Content</Content>
-      <Footer>Footer</Footer>
-    </Layout>
+    <React.Suspense fallback={<Loading />}>
+      <Layout>
+        <Header />
+        <Content>{children}</Content>
+        <Footer />
+      </Layout>
+    </React.Suspense>
   );
 };
 
