@@ -1,0 +1,32 @@
+.ant-layout-header,
+.ant-layout-footer {
+  color: #f9dec9;
+  background: #564e58;
+}
+
+[data-theme="dark"] .ant-layout-header {
+  background: #6aa0c7;
+}
+
+[data-theme="dark"] .ant-layout-footer {
+  background: #6aa0c7;
+}
+
+.ant-layout-footer {
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .ant-layout-sider {
+  background: #3499ec;
+}
+
+.ant-layout-content {
+  min-height: calc(100vh - 133px);
+  color: #564e58;
+  line-height: 120px;
+  background: #f9dec9;
+}
+
+[data-theme="dark"] .ant-layout-content {
+  background: #107bcb;
+}
