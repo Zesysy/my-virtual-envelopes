@@ -6,13 +6,17 @@ import { Header, Footer } from "./sub";
 
 const { Content } = Layout;
 
-const LayoutContainer = () => {
+const Loading = () => <p>Chargement ...</p>;
+
+const LayoutContainer = ({ children }: { children: any }) => {
   return (
-    <Layout>
-      <Header />
-      <Content>Content</Content>
-      <Footer />
-    </Layout>
+    <React.Suspense fallback={<Loading />}>
+      <Layout>
+        <Header />
+        <Content>{children}</Content>
+        <Footer />
+      </Layout>
+    </React.Suspense>
   );
 };
 

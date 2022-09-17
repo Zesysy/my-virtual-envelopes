@@ -44,3 +44,11 @@
   justify-content: end !important;
   padding: 0px 0px !important;
 }
+
+.ant-menu-item-selected {
+  color: #bc96e6 !important;
+}
+
+.ant-menu-item::after {
+  border: none !important;
+}
