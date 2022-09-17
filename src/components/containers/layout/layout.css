@@ -1,7 +1,12 @@
+/* LAYOUT */
 .ant-layout-header,
 .ant-layout-footer {
-  color: #f9dec9;
-  background: #564e58;
+  color: #f9dec9 !important;
+  background: #564e58 !important;
+}
+
+.ant-layout-header {
+  padding: 0px 0px !important;
 }
 
 [data-theme="dark"] .ant-layout-header {
@@ -21,7 +26,7 @@
 }
 
 .ant-layout-content {
-  min-height: calc(100vh - 133px);
+  min-height: calc(100vh - 133px) !important;
   color: #564e58;
   line-height: 120px;
   background: #f9dec9;
@@ -29,4 +34,13 @@
 
 [data-theme="dark"] .ant-layout-content {
   background: #107bcb;
+}
+
+/* HEADER */
+.ant-layout-header .ant-menu {
+  color: #f9dec9 !important;
+  background: #564e58 !important;
+  padding: 0px 40px !important;
+  justify-content: end !important;
+  padding: 0px 0px !important;
 }
