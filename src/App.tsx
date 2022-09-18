@@ -2,7 +2,7 @@ import React from "react";
 
 import { Layout } from "./components/containers";
 
-import "./App.css";
+import "./App.less";
 import Router from "./Router";
 
 export interface IAppProps {}
