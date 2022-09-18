@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 
-import "./layout.css";
+import "./layout.less";
 import { Header, Footer } from "./sub";
 
 const { Content } = Layout;
